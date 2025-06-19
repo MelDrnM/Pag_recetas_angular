@@ -1,0 +1,26 @@
+.recipe-detail {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.recipe-detail img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #3366cc;
+}

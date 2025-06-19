@@ -1,0 +1,19 @@
+<h2>Catálogo de Recetas</h2>
+
+<input
+  type="text"
+  placeholder="Buscar receta..."
+  (input)="filterRecipes($event)"
+  style="margin-bottom: 20px; padding: 8px; width: 100%; max-width: 400px;"
+/>
+
+<div class="recipe-grid">
+  <div
+    class="recipe-card"
+    *ngFor="let recipe of filteredRecipes"
+    (click)="goToRecipe(recipe.id)"
+  >
+    <img [src]="recipe.image" [alt]="recipe.name" />
+    <h3>{{ recipe.name }}</h3>
+  </div>
+</div>
